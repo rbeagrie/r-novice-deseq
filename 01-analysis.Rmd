@@ -1,9 +1,14 @@
 ---
-title: "RNAseq Analysis Example"
-output:
-  html_document:
-    keep_md: yes
+layout: page
+title: Lesson Title
+subtitle: Topic Title
+minutes: 10
 ---
+
+```{r, include=FALSE}
+source("tools/chunk-options.R")
+opts_chunk$set(fig.path = "fig/topic-title-")
+```
 
 This is an introduction to RNAseq analysis for use at Software Carpentry bootcamps that have covered novice R. It involves reading in some count data from an RNAseq experiment, exploring the data using base R functions and then analysis with the package DESeq2.
 
